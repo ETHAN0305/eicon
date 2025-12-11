@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, MessageSquare, MapPin, FileText, Hammer, Truck, CheckCircle, Home } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 
-const Projects = () => {
+const OurProcess = () => {
   const navigate = useNavigate();
 
   const handleNavigateToSection = (sectionId: string) => {
@@ -194,4 +194,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default OurProcess;

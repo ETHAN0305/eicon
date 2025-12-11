@@ -222,8 +222,8 @@ const Index = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="bg-amber-500 text-gray-900 hover:bg-amber-600">
-                  <Link to="/projects" className="flex items-center">
-                    View Our Projects
+                  <Link to="/ourprocess" className="flex items-center">
+                    View Our Process
                     <ArrowRight className="h-5 w-5 ml-2" />
                   </Link>
                 </Button>
