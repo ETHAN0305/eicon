@@ -62,7 +62,7 @@ const Index = () => {
           Accept: "application/json",
         },
         body: JSON.stringify({
-          access_key: "YOUR_WEB3FORMS_ACCESS_KEY_HERE", // Replace with your Web3Forms access key
+          access_key: "85f29ef6-0f87-4426-8ca4-957e3f8d7e43", // Replace with your Web3Forms access key
           name: `${formData.firstName} ${formData.lastName}`,
           email: formData.email,
           phone: formData.phone,
@@ -171,7 +171,7 @@ const Index = () => {
                       Services
                     </button>
                     <Link
-                      to="/projects"
+                      to="/ourprocess"
                       className="text-left text-lg text-silvery-600 hover:text-gold-600 transition-colors py-2"
                       onClick={() => setMobileMenuOpen(false)}
                     >
@@ -369,7 +369,7 @@ const Index = () => {
                     <div>
                       <h4 className="font-semibold text-lg mb-1">Phone</h4>
                       <p className="text-gray-300">+63 950 751 3820</p>
-                      <p className="text-silvery-400 text-sm">Monday - Friday, 8:00 AM - 6:00 PM</p>
+
                     </div>
                   </div>
 
@@ -379,7 +379,7 @@ const Index = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-lg mb-1">Email</h4>
-                      <p className="text-gray-300">eicon.buildersandsupply@gmail.com</p>
+                      <p className="text-gray-300">info@eiconbuilders.com</p>
                       <p className="text-silvery-400 text-sm">We'll respond within 24 hours</p>
                     </div>
                   </div>
@@ -395,17 +395,7 @@ const Index = () => {
                     </div>
                   </div>
 
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-gold-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Clock className="h-6 w-6 text-black" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-lg mb-1">Business Hours</h4>
-                      <p className="text-gray-300">Monday - Friday: 8:00 AM - 6:00 PM</p>
-                      <p className="text-gray-300">Saturday: 9:00 AM - 4:00 PM</p>
-                      <p className="text-gray-300">Sunday: Closed</p>
-                    </div>
-                  </div>
+
                 </div>
               </div>
             </div>
@@ -554,8 +544,8 @@ const Index = () => {
               <h4 className="font-semibold mb-4">Contact Info</h4>
               <ul className="space-y-2 text-silvery-400">
                 <li>+63 950 751 3820</li>
-                <li>eicon.buildersandsupply@gmail.com</li>
-                <li>Banuyo St., Lot 11, Block 45, Canlaon View Subd., <br />Brgy. Blumentritt, Murcia Neg. Occ. 61295</li>
+                <li>info@eiconbuilders.com</li>
+                <li>Banuyo St., Lot 11, Block 45, Canlaon View Subd., Brgy. Blumentritt, Murcia Neg. Occ. 6129</li>
               </ul>
             </div>
           </div>
