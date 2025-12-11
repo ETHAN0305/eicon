@@ -132,21 +132,21 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-amber-500 rounded-lg flex items-center justify-center">
-                <Home className="h-6 w-6 text-gray-900" />
+              <div className="w-10 h-10 bg-gold-500 rounded-lg flex items-center justify-center">
+                <Home className="h-6 w-6 text-black" />
               </div>
               <div>
-                <h1 className="text-xl font-bold text-gray-900">EICON Builders & Supply Inc.</h1>
-                <p className="text-xs text-gray-500">Every Build is an icon of trust</p>
+                <h1 className="text-xl font-bold text-black">EICON Builders & Supply Inc.</h1>
+                <p className="text-xs text-silvery-400">Every Build is an icon of trust</p>
               </div>
             </div>
 
             <nav className="hidden md:flex items-center space-x-8">
-              <button onClick={() => handleNavigation('services')} className="text-gray-700 hover:text-amber-600 transition-colors">Services</button>
-              <Link to="/ourprocess" className="text-gray-700 hover:text-amber-600 transition-colors">Our Process</Link>
-              <button onClick={() => handleNavigation('about')} className="text-gray-700 hover:text-amber-600 transition-colors">About</button>
-              <button onClick={() => handleNavigation('contact')} className="text-gray-700 hover:text-amber-600 transition-colors">Contact</button>
-              <a href="https://www.facebook.com/eicon.buildersPH" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-amber-600 transition-colors">
+              <button onClick={() => handleNavigation('services')} className="text-silvery-600 hover:text-gold-600 transition-colors">Services</button>
+              <Link to="/ourprocess" className="text-silvery-600 hover:text-gold-600 transition-colors">Our Process</Link>
+              <button onClick={() => handleNavigation('about')} className="text-silvery-600 hover:text-gold-600 transition-colors">About</button>
+              <button onClick={() => handleNavigation('contact')} className="text-silvery-600 hover:text-gold-600 transition-colors">Contact</button>
+              <a href="https://www.facebook.com/eicon.buildersPH" target="_blank" rel="noopener noreferrer" className="text-silvery-600 hover:text-gold-600 transition-colors">
                 <Facebook className="h-5 w-5" />
               </a>
             </nav>
@@ -166,26 +166,26 @@ const Index = () => {
                   <nav className="flex flex-col space-y-4 mt-8">
                     <button
                       onClick={() => handleNavigation('services')}
-                      className="text-left text-lg text-gray-700 hover:text-amber-600 transition-colors py-2"
+                      className="text-left text-lg text-silvery-600 hover:text-gold-600 transition-colors py-2"
                     >
                       Services
                     </button>
                     <Link
                       to="/projects"
-                      className="text-left text-lg text-gray-700 hover:text-amber-600 transition-colors py-2"
+                      className="text-left text-lg text-silvery-600 hover:text-gold-600 transition-colors py-2"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       Our Process
                     </Link>
                     <button
                       onClick={() => handleNavigation('about')}
-                      className="text-left text-lg text-gray-700 hover:text-amber-600 transition-colors py-2"
+                      className="text-left text-lg text-silvery-600 hover:text-gold-600 transition-colors py-2"
                     >
                       About
                     </button>
                     <button
                       onClick={() => handleNavigation('contact')}
-                      className="text-left text-lg text-gray-700 hover:text-amber-600 transition-colors py-2"
+                      className="text-left text-lg text-silvery-600 hover:text-gold-600 transition-colors py-2"
                     >
                       Contact
                     </button>
@@ -193,7 +193,7 @@ const Index = () => {
                       href="https://www.facebook.com/eicon.buildersPH"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center text-left text-lg text-gray-700 hover:text-amber-600 transition-colors py-2"
+                      className="flex items-center text-left text-lg text-silvery-600 hover:text-gold-600 transition-colors py-2"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       <Facebook className="h-5 w-5 mr-2" />
@@ -208,26 +208,26 @@ const Index = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-gray-800 to-gray-900 text-white py-20 lg:py-32">
+      <section className="relative bg-gradient-to-r from-black to-gray-800 text-white py-20 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <Badge className="bg-amber-500 text-gray-900 mb-4 hover:bg-amber-500 hover:text-gray-900">Committed to Quality You Can Trust</Badge>
+              <Badge className="bg-gold-500 text-black mb-4 hover:bg-gold-500 hover:text-black">Committed to Quality You Can Trust</Badge>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
                 We build. We supply.
-                <span className="text-amber-400">&nbsp;We deliver.</span>
+                <span className="text-gold-400">&nbsp;We deliver.</span>
               </h1>
               <p className="text-xl text-gray-300 mb-8 leading-relaxed">
                 We provide reliable construction services and high-grade materials for residential, commercial, and industrial projects. From planning to delivery, our team ensures durability, precision, and on-time service every step of the way.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-amber-500 text-gray-900 hover:bg-amber-600">
+                <Button size="lg" className="bg-gold-500 text-black hover:bg-gold-600">
                   <Link to="/ourprocess" className="flex items-center">
                     View Our Process
                     <ArrowRight className="h-5 w-5 ml-2" />
                   </Link>
                 </Button>
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-gray-900" onClick={() => handleNavigation('contact')}>
+                <Button size="lg" variant="outline" className="border-gray-300 text-white hover:bg-gray-700 hover:text-gold-400" onClick={() => handleNavigation('contact')}>
                   <span className="flex items-center">
                     Get Free Quote
                     <Phone className="h-5 w-5 ml-2" />
@@ -255,8 +255,8 @@ const Index = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-amber-500 mb-2">{stat.number}</div>
-                <div className="text-gray-600 font-medium">{stat.label}</div>
+                <div className="text-3xl md:text-4xl font-bold text-gold-500 mb-2">{stat.number}</div>
+                <div className="text-silvery-600 font-medium">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -268,8 +268,8 @@ const Index = () => {
       <section id="services" className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">Our Services</h2>
+            <p className="text-xl text-silvery-500 max-w-3xl mx-auto">
               From custom homes to complete subdivisions, we provide comprehensive construction and supply services.
             </p>
           </div>
@@ -278,15 +278,15 @@ const Index = () => {
             {services.map((service, index) => {
               const IconComponent = service.icon;
               return (
-                <Card key={index} className="text-center hover:shadow-lg transition-shadow">
+                <Card key={index} className="text-center hover:shadow-lg transition-shadow border-gray-200">
                   <CardHeader>
-                    <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <IconComponent className="h-8 w-8 text-amber-600" />
+                    <div className="w-16 h-16 bg-gold-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <IconComponent className="h-8 w-8 text-gold-600" />
                     </div>
                     <CardTitle className="text-xl">{service.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <CardDescription className="text-gray-600">
+                    <CardDescription className="text-silvery-600">
                       {service.description}
                     </CardDescription>
                   </CardContent>
@@ -302,12 +302,12 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">About EICON Builders & Supply Inc.</h2>
-              <p className="text-lg text-gray-600 mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">About EICON Builders & Supply Inc.</h2>
+              <p className="text-lg text-silvery-500 mb-6">
                 EICON Builders & Supply Inc. is a newly established construction and building materials provider committed to delivering reliable, high-quality services for residential and small commercial projects. We aim to become a trusted partner for homeowners, contractors, and businesses by offering dependable workmanship and durable construction materials at fair and honest pricing.
                 Although our company is new, our team brings practical experience in construction support, site coordination, and materials sourcing. We focus on delivering straightforward, well-managed services that help clients complete their projects smoothly and efficiently.
               </p>
-              <p className="text-lg text-gray-600 mb-8">
+              <p className="text-lg text-silvery-500 mb-8">
                 Our commitment to excellence, attention to detail, and customer satisfaction has made us
                 the preferred choice for homeowners and contractors throughout the region.
 
@@ -315,20 +315,20 @@ const Index = () => {
 
               <div className="space-y-4">
                 <div className="flex items-center">
-                  <CheckCircle className="h-6 w-6 text-amber-500 mr-3" />
-                  <span className="text-gray-700">Quality & Reliability</span>
+                  <CheckCircle className="h-6 w-6 text-gold-500 mr-3" />
+                  <span className="text-silvery-600">Quality & Reliability</span>
                 </div>
                 <div className="flex items-center">
-                  <CheckCircle className="h-6 w-6 text-amber-500 mr-3" />
-                  <span className="text-gray-700">Customer-Centered Service</span>
+                  <CheckCircle className="h-6 w-6 text-gold-500 mr-3" />
+                  <span className="text-silvery-600">Customer-Centered Service</span>
                 </div>
                 <div className="flex items-center">
-                  <CheckCircle className="h-6 w-6 text-amber-500 mr-3" />
-                  <span className="text-gray-700">Efficient Delivery</span>
+                  <CheckCircle className="h-6 w-6 text-gold-500 mr-3" />
+                  <span className="text-silvery-600">Efficient Delivery</span>
                 </div>
                 <div className="flex items-center">
-                  <CheckCircle className="h-6 w-6 text-amber-500 mr-3" />
-                  <span className="text-gray-700">Honest Workmanship</span>
+                  <CheckCircle className="h-6 w-6 text-gold-500 mr-3" />
+                  <span className="text-silvery-600">Honest Workmanship</span>
                 </div>
               </div>
             </div>
@@ -347,7 +347,7 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-gray-900 text-white">
+      <section id="contact" className="py-20 bg-black text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Contact Us</h2>
@@ -363,30 +363,30 @@ const Index = () => {
                 <h3 className="text-2xl font-bold mb-6">Get In Touch</h3>
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-amber-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Phone className="h-6 w-6 text-gray-900" />
+                    <div className="w-12 h-12 bg-gold-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Phone className="h-6 w-6 text-black" />
                     </div>
                     <div>
                       <h4 className="font-semibold text-lg mb-1">Phone</h4>
                       <p className="text-gray-300">+63 950 751 3820</p>
-                      <p className="text-gray-400 text-sm">Monday - Friday, 8:00 AM - 6:00 PM</p>
+                      <p className="text-silvery-400 text-sm">Monday - Friday, 8:00 AM - 6:00 PM</p>
                     </div>
                   </div>
 
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-amber-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Mail className="h-6 w-6 text-gray-900" />
+                    <div className="w-12 h-12 bg-gold-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Mail className="h-6 w-6 text-black" />
                     </div>
                     <div>
                       <h4 className="font-semibold text-lg mb-1">Email</h4>
                       <p className="text-gray-300">eicon.buildersandsupply@gmail.com</p>
-                      <p className="text-gray-400 text-sm">We'll respond within 24 hours</p>
+                      <p className="text-silvery-400 text-sm">We'll respond within 24 hours</p>
                     </div>
                   </div>
 
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-amber-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <MapPin className="h-6 w-6 text-gray-900" />
+                    <div className="w-12 h-12 bg-gold-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <MapPin className="h-6 w-6 text-black" />
                     </div>
                     <div>
                       <h4 className="font-semibold text-lg mb-1">Office Location</h4>
@@ -396,8 +396,8 @@ const Index = () => {
                   </div>
 
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-amber-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Clock className="h-6 w-6 text-gray-900" />
+                    <div className="w-12 h-12 bg-gold-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Clock className="h-6 w-6 text-black" />
                     </div>
                     <div>
                       <h4 className="font-semibold text-lg mb-1">Business Hours</h4>
@@ -429,7 +429,7 @@ const Index = () => {
                           name="firstName"
                           value={formData.firstName}
                           onChange={handleInputChange}
-                          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500"
+                          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gold-500"
                           placeholder="John"
                           required
                         />
@@ -441,7 +441,7 @@ const Index = () => {
                           name="lastName"
                           value={formData.lastName}
                           onChange={handleInputChange}
-                          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500"
+                          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gold-500"
                           placeholder="Dela Cruz"
                           required
                         />
@@ -455,7 +455,7 @@ const Index = () => {
                         name="email"
                         value={formData.email}
                         onChange={handleInputChange}
-                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500"
+                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gold-500"
                         placeholder="sample@example.com"
                         required
                       />
@@ -468,7 +468,7 @@ const Index = () => {
                         name="phone"
                         value={formData.phone}
                         onChange={handleInputChange}
-                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500"
+                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gold-500"
                         placeholder="+63 950 751 3820"
                         required
                       />
@@ -480,7 +480,7 @@ const Index = () => {
                         name="projectType"
                         value={formData.projectType}
                         onChange={handleInputChange}
-                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500"
+                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gold-500"
                         required
                       >
                         <option value="">Select a project type</option>
@@ -499,7 +499,7 @@ const Index = () => {
                         value={formData.projectDetails}
                         onChange={handleInputChange}
                         rows={4}
-                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500"
+                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gold-500"
                         placeholder="Tell us about your project..."
                         required
                       ></textarea>
@@ -507,7 +507,7 @@ const Index = () => {
 
                     <Button
                       type="submit"
-                      className="w-full bg-amber-500 hover:bg-amber-600"
+                      className="w-full bg-gold-500 hover:bg-gold-600 text-black font-semibold"
                       disabled={isSubmitting}
                     >
                       {isSubmitting ? "Sending..." : "Send Message"}
@@ -526,15 +526,15 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="md:col-span-2">
               <div className="flex items-center space-x-3 mb-4">
-                <div className="w-10 h-10 bg-amber-500 rounded-lg flex items-center justify-center">
-                  <Home className="h-6 w-6 text-gray-900" />
+                <div className="w-10 h-10 bg-gold-500 rounded-lg flex items-center justify-center">
+                  <Home className="h-6 w-6 text-black" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold">EICON Builders and Supply</h3>
-                  <p className="text-gray-400 text-sm">Every Build is an icon of trust</p>
+                  <p className="text-silvery-400 text-sm">Every Build is an icon of trust</p>
                 </div>
               </div>
-              <p className="text-gray-400 mb-4 max-w-md">
+              <p className="text-silvery-400 mb-4 max-w-md">
                 Your trusted partner for custom home construction, subdivision development, and building supplies.
                 Quality craftsmanship and customer satisfaction guaranteed.
               </p>
@@ -542,17 +542,17 @@ const Index = () => {
 
             <div>
               <h4 className="font-semibold mb-4">Quick Links</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li><button onClick={() => handleNavigation('services')} className="hover:text-amber-400 transition-colors">Services</button></li>
-                <li><Link to="/projects" className="hover:text-amber-400 transition-colors">Our Process</Link></li>
-                <li><button onClick={() => handleNavigation('about')} className="hover:text-amber-400 transition-colors">About</button></li>
-                <li><a href="#contact" className="hover:text-amber-400 transition-colors">Contact</a></li>
+              <ul className="space-y-2 text-silvery-400">
+                <li><button onClick={() => handleNavigation('services')} className="hover:text-gold-400 transition-colors">Services</button></li>
+                <li><Link to="/projects" className="hover:text-gold-400 transition-colors">Our Process</Link></li>
+                <li><button onClick={() => handleNavigation('about')} className="hover:text-gold-400 transition-colors">About</button></li>
+                <li><a href="#contact" className="hover:text-gold-400 transition-colors">Contact</a></li>
               </ul>
             </div>
 
             <div>
               <h4 className="font-semibold mb-4">Contact Info</h4>
-              <ul className="space-y-2 text-gray-400">
+              <ul className="space-y-2 text-silvery-400">
                 <li>+63 950 751 3820</li>
                 <li>eicon.buildersandsupply@gmail.com</li>
                 <li>Banuyo St., Lot 11, Block 45, Canlaon View Subd., <br />Brgy. Blumentritt, Murcia Neg. Occ. 61295</li>
@@ -563,7 +563,7 @@ const Index = () => {
           <Separator className="my-8 bg-gray-800" />
 
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 text-sm">
+            <p className="text-silvery-400 text-sm">
               © 2025 EICON Builders & Supply Inc. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
@@ -571,7 +571,7 @@ const Index = () => {
                 href="https://www.facebook.com/eicon.buildersPH"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-amber-400 transition-colors"
+                className="text-silvery-400 hover:text-gold-400 transition-colors"
               >
                 <Facebook className="h-5 w-5" />
               </a>
