@@ -242,6 +242,8 @@ const Index = () => {
                   src="./logo_only.jpg"
                   alt="EICON Builders Logo"
                   className="w-full h-auto object-contain"
+                  loading="eager"
+                  decoding="async"
                 />
               </div>
             </div>
@@ -339,6 +341,8 @@ const Index = () => {
                   src="./logo.png"
                   alt="EICON Builders team at work"
                   className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
             </div>

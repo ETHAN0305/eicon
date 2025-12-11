@@ -1,6 +1,7 @@
 // vite.config.ts
 import { defineConfig, type Plugin } from 'vite';
 import react from '@vitejs/plugin-react-swc';
+import viteCompression from 'vite-plugin-compression';
 import fs from 'node:fs/promises';
 import nodePath from 'node:path';
 import { componentTagger } from 'lovable-tagger';
@@ -216,6 +217,19 @@ export default defineConfig(({ mode }) => {
       mode === 'development' &&
       componentTagger(),
       cdnPrefixImages(),
+      // Add compression plugin for production builds
+      mode === 'production' && viteCompression({
+        algorithm: 'gzip',
+        ext: '.gz',
+        threshold: 10240, // Only compress files larger than 10kb
+        deleteOriginFile: false,
+      }),
+      mode === 'production' && viteCompression({
+        algorithm: 'brotliCompress',
+        ext: '.br',
+        threshold: 10240,
+        deleteOriginFile: false,
+      }),
     ].filter(Boolean),
     base: "/",
     resolve: {
@@ -225,6 +239,33 @@ export default defineConfig(({ mode }) => {
         "react-router-dom": path.resolve(__dirname, "./src/lib/react-router-dom-proxy.tsx"),
         // Original react-router-dom under a different name
         "react-router-dom-original": "react-router-dom",
+      },
+    },
+    build: {
+      // Enable minification
+      minify: 'terser',
+      terserOptions: {
+        compress: {
+          drop_console: true, // Remove console.logs in production
+          drop_debugger: true,
+        },
+      },
+      // Optimize chunk size
+      rollupOptions: {
+        output: {
+          manualChunks: {
+            'react-vendor': ['react', 'react-dom', 'react-router-dom'],
+            'ui-vendor': ['@radix-ui/react-dialog', '@radix-ui/react-dropdown-menu', '@radix-ui/react-slot'],
+          },
+        },
+      },
+      // Set chunk size warning limit
+      chunkSizeWarningLimit: 1000,
+    },
+    // Enable compression
+    server: {
+      headers: {
+        'Cache-Control': 'public, max-age=31536000',
       },
     },
     define: {
