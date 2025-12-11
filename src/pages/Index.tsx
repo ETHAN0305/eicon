@@ -62,7 +62,7 @@ const Index = () => {
           Accept: "application/json",
         },
         body: JSON.stringify({
-          access_key: "85f29ef6-0f87-4426-8ca4-957e3f8d7e43", // Replace with your Web3Forms access key
+          access_key: "34481de6-8058-4163-8d8f-3a08f6ef1407", // Replace with your Web3Forms access key
           name: `${formData.firstName} ${formData.lastName}`,
           email: formData.email,
           phone: formData.phone,
