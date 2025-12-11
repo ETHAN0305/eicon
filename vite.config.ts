@@ -211,6 +211,9 @@ export default defineConfig(({ mode }) => {
     server: {
       host: "::",
       port: 8080,
+      headers: {
+        'Cache-Control': 'public, max-age=31536000',
+      },
     },
     plugins: [
       react(),
@@ -242,14 +245,8 @@ export default defineConfig(({ mode }) => {
       },
     },
     build: {
-      // Enable minification
-      minify: 'terser',
-      terserOptions: {
-        compress: {
-          drop_console: true, // Remove console.logs in production
-          drop_debugger: true,
-        },
-      },
+      // Use esbuild minification (faster and no extra dependency needed)
+      minify: 'esbuild',
       // Optimize chunk size
       rollupOptions: {
         output: {
@@ -261,12 +258,6 @@ export default defineConfig(({ mode }) => {
       },
       // Set chunk size warning limit
       chunkSizeWarningLimit: 1000,
-    },
-    // Enable compression
-    server: {
-      headers: {
-        'Cache-Control': 'public, max-age=31536000',
-      },
     },
     define: {
       // Define environment variables for build-time configuration
