@@ -143,7 +143,7 @@ const Index = () => {
 
             <nav className="hidden md:flex items-center space-x-8">
               <button onClick={() => handleNavigation('services')} className="text-gray-700 hover:text-amber-600 transition-colors">Services</button>
-              <Link to="/projects" className="text-gray-700 hover:text-amber-600 transition-colors">Our Process</Link>
+              <Link to="/ourprocess" className="text-gray-700 hover:text-amber-600 transition-colors">Our Process</Link>
               <button onClick={() => handleNavigation('about')} className="text-gray-700 hover:text-amber-600 transition-colors">About</button>
               <button onClick={() => handleNavigation('contact')} className="text-gray-700 hover:text-amber-600 transition-colors">Contact</button>
               <a href="https://www.facebook.com/eiconbuilders" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-amber-600 transition-colors">
