@@ -217,7 +217,7 @@ export default defineConfig(({ mode }) => {
       componentTagger(),
       cdnPrefixImages(),
     ].filter(Boolean),
-    base: "/eicon/",
+    base: "/",
     resolve: {
       alias: {
         "@": path.resolve(__dirname, "./src"),
