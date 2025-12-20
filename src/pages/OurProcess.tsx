@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, MessageSquare, MapPin, FileText, Hammer, Truck, CheckCircle, Home } from "lucide-react";
+import { ArrowLeft, MessageSquare, MapPin, FileText, Hammer, Truck, CheckCircle, Home, Facebook } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 
 const OurProcess = () => {
@@ -63,20 +63,24 @@ const OurProcess = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <Link to="/" className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-amber-500 rounded-lg flex items-center justify-center">
-                <Home className="h-6 w-6 text-gray-900" />
+              <div className="w-10 h-10 bg-gold-500 rounded-lg flex items-center justify-center">
+                <Home className="h-6 w-6 text-black" />
               </div>
               <div>
-                <h1 className="text-xl font-bold text-gray-900">EICON Builders & Supply Inc.</h1>
-                <p className="text-xs text-gray-500">Every Build is an icon of trust</p>
+                <h1 className="text-xl font-bold text-black">EICON Builders & Supply Inc.</h1>
+                <p className="text-xs text-silvery-400">Every Build is an icon of trust</p>
               </div>
             </Link>
 
             <nav className="hidden md:flex items-center space-x-8">
-              <button onClick={() => handleNavigateToSection('services')} className="text-gray-700 hover:text-amber-600 transition-colors">Services</button>
-              <Link to="/projects" className="text-amber-600 font-medium transition-colors">Our Process</Link>
-              <button onClick={() => handleNavigateToSection('about')} className="text-gray-700 hover:text-amber-600 transition-colors">About</button>
-              <button onClick={() => handleNavigateToSection('contact')} className="text-gray-700 hover:text-amber-600 transition-colors">Contact</button>
+              <button onClick={() => handleNavigateToSection('services')} className="text-silvery-600 hover:text-gold-600 transition-colors">Services</button>
+              <Link to="/ourprocess" className="text-gold-600 font-semibold">Our Process</Link>
+              <button onClick={() => handleNavigateToSection('about')} className="text-silvery-600 hover:text-gold-600 transition-colors">About</button>
+              <Link to="/community-impact" className="text-silvery-600 hover:text-gold-600 transition-colors">Community Impact</Link>
+              <button onClick={() => handleNavigateToSection('contact')} className="text-silvery-600 hover:text-gold-600 transition-colors">Contact</button>
+              <a href="https://www.facebook.com/eicon.buildersPH" target="_blank" rel="noopener noreferrer" className="text-silvery-600 hover:text-gold-600 transition-colors">
+                <Facebook className="h-5 w-5" />
+              </a>
             </nav>
 
             {/* Mobile menu button */}

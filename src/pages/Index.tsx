@@ -145,6 +145,7 @@ const Index = () => {
               <button onClick={() => handleNavigation('services')} className="text-silvery-600 hover:text-gold-600 transition-colors">Services</button>
               <Link to="/ourprocess" className="text-silvery-600 hover:text-gold-600 transition-colors">Our Process</Link>
               <button onClick={() => handleNavigation('about')} className="text-silvery-600 hover:text-gold-600 transition-colors">About</button>
+              <Link to="/community-impact" className="text-silvery-600 hover:text-gold-600 transition-colors">Community Impact</Link>
               <button onClick={() => handleNavigation('contact')} className="text-silvery-600 hover:text-gold-600 transition-colors">Contact</button>
               <a href="https://www.facebook.com/eicon.buildersPH" target="_blank" rel="noopener noreferrer" className="text-silvery-600 hover:text-gold-600 transition-colors">
                 <Facebook className="h-5 w-5" />
@@ -183,6 +184,13 @@ const Index = () => {
                     >
                       About
                     </button>
+                    <Link
+                      to="/community-impact"
+                      className="text-left text-lg text-silvery-600 hover:text-gold-600 transition-colors py-2"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      Community Impact
+                    </Link>
                     <button
                       onClick={() => handleNavigation('contact')}
                       className="text-left text-lg text-silvery-600 hover:text-gold-600 transition-colors py-2"
@@ -309,10 +317,13 @@ const Index = () => {
                 EICON Builders & Supply Inc. is a newly established construction and building materials provider committed to delivering reliable, high-quality services for residential and small commercial projects. We aim to become a trusted partner for homeowners, contractors, and businesses by offering dependable workmanship and durable construction materials at fair and honest pricing.
                 Although our company is new, our team brings practical experience in construction support, site coordination, and materials sourcing. We focus on delivering straightforward, well-managed services that help clients complete their projects smoothly and efficiently.
               </p>
-              <p className="text-lg text-silvery-500 mb-8">
+              <p className="text-lg text-silvery-500 mb-6">
                 Our commitment to excellence, attention to detail, and customer satisfaction has made us
                 the preferred choice for homeowners and contractors throughout the region.
+              </p>
 
+              <p className="text-lg text-silvery-500 mb-8">
+                <strong>Proud supporter of annual community development projects.</strong> We believe in giving back to the communities we serve through meaningful partnerships and sustainable initiatives.
               </p>
 
               <div className="space-y-4">
@@ -538,8 +549,9 @@ const Index = () => {
               <h4 className="font-semibold mb-4">Quick Links</h4>
               <ul className="space-y-2 text-silvery-400">
                 <li><button onClick={() => handleNavigation('services')} className="hover:text-gold-400 transition-colors">Services</button></li>
-                <li><Link to="/projects" className="hover:text-gold-400 transition-colors">Our Process</Link></li>
+                <li><Link to="/ourprocess" className="hover:text-gold-400 transition-colors">Our Process</Link></li>
                 <li><button onClick={() => handleNavigation('about')} className="hover:text-gold-400 transition-colors">About</button></li>
+                <li><Link to="/community-impact" className="hover:text-gold-400 transition-colors">Community Impact</Link></li>
                 <li><a href="#contact" className="hover:text-gold-400 transition-colors">Contact</a></li>
               </ul>
             </div>
