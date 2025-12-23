@@ -247,7 +247,7 @@ const Index = () => {
             <div className="relative">
               <div className="bg-white/10 rounded-2xl p-8 flex items-center justify-center">
                 <img
-                  src="./logo_only.jpg"
+                  src="./logo_black.jpeg"
                   alt="EICON Builders Logo"
                   className="w-full h-auto object-contain"
                   loading="eager"
@@ -349,7 +349,7 @@ const Index = () => {
             <div className="relative">
               <div className="aspect-square bg-gray-200 rounded-2xl overflow-hidden">
                 <img
-                  src="./logo.png"
+                  src="./logo.jpeg"
                   alt="EICON Builders team at work"
                   className="w-full h-full object-cover"
                   loading="lazy"
